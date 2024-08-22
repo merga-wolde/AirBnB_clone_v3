@@ -18,7 +18,7 @@ def show_status():
     return jsonify({"status": "OK"})
 @app_views.route('/nop', methods=['GET'])
 def nop():
-    return jsonify({"message": "This is the /nop endpoint"})
+    return jsonify({"error": "Not found"})
 
 @app_views.route('/stats', methods=['GET'])
 def stats():
